@@ -1,7 +1,7 @@
 // var PANEL = document.getElementById("sample-metadata");
 function updateMetaData(data) {
     // Reference to Panel element for sample metadata
-    var PANEL = document.getElementById("sample_metadata");
+    var PANEL = document.getElementById("sample-metadata");
 
     // Clear any existing metadata
     PANEL.innerHTML = '';
