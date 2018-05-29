@@ -1,0 +1,16 @@
+.jumbotron {
+    text-align: center;
+    min-height: 3.5rem;
+    background-color: rgba(22, 228, 135, 0.5);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#pie, #gauge, #bubble{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
