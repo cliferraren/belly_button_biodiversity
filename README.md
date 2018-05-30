@@ -11,7 +11,7 @@ I used Flask to design an API for the sample dataset and to serve the HTML and J
 * First, I created a template called `index.html` for my dashboard landing page using bootstrap.
 
 * Here is the sample API.
-f
+
 ```python
 @app.route("/")
     """Return the dashboard homepage."""
