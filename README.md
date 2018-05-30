@@ -110,7 +110,7 @@ I used Flask to design an API for the sample dataset and to serve the HTML and J
 
 ## Step 2 - Plotly.js
 
-I used plotly.js to build interactive charts for your dashboard.
+I used plotly.js to build interactive charts for my dashboard.
 
 * Use the route `/names` to populate a dropdown select element with the list of sample names.
 
