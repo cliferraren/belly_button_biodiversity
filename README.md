@@ -1,14 +1,13 @@
-# Belly Button Biodiversity
+# An interactive dashboard to explore the [Belly Button Biodiversity](http://robdunnlab.com/projects/belly-button-biodiversity/).
 
 ![Bacteria by filterforge.com](Images/bacteria_by_filterforgedotcom.jpg)
 
-In this assignment, I built an interactive dashboard to explore the [Belly Button Biodiversity DataSet](http://robdunnlab.com/projects/belly-button-biodiversity/).
 
-## Step 1 - Flask API
 
-I used Flask to design an API for the sample dataset and to serve the HTML and JavaScript that are required for my dashboard page. I used also SQLite for my database file and SQLAlchemy inside my Flask application.
+## First - we created a Flask API
 
-* First, I created a template called `index.html` for my dashboard landing page using bootstrap.
+- We used Flask here to designed our API for the sample dataset and used HTML and JavaScript for our dashboard's page front-end. 
+- We used also SQLite for our database and SQLAlchemy for relational mapper routing our data to our Flask application.
 
 * Here is the sample API.
 
@@ -108,37 +107,7 @@ I used Flask to design an API for the sample dataset and to serve the HTML and J
 
 ---
 
-## Step 2 - Plotly.js
+## Then we used Plotly.js for Visualization
 
-I used plotly.js to build interactive charts for my dashboard.
+- We employ plotly.js to build our interactive charts for our dashboard charts and integrate it to our html page.
 
-* Use the route `/names` to populate a dropdown select element with the list of sample names.
-
-  * Use `document.getElementById`, `document.createElement` and `append` to populate the create option elements and append them to the dropdown selector.
-
-  * Use the following HTML tag for the dropdown selector
-
-  ```html
-  <select id="selDataset" onchange="optionChanged(this.value)"></select>
-  ```
-  ![dropdown](Images/dropdown.png)
-
-* Create a PIE chart that uses data from your routes `/samples/<sample>` and `/otu` to display the top 10 samples.
-
-  ![PIE Chart](Images/pie_chart.png)
-
-* Create a Bubble Chart that uses data from your routes `/samples/<sample>` and `/otu` to plot the __Sample Value__ vs the __OTU ID__ for the selected sample.
-
-  ![Bubble Chart](Images/bubble_chart.png)
-
-* Display each key/value pair from the metadata JSON object from the route `/metadata/<sample>`
-
----
-
-## Optional Challenge
-
-To complete, I create a Gauge chart to ccount for values ranging from 0 - 9 using `Plotly.restyle` to update the chart whenever a new sample is selected.
-
-![Weekly Washing Frequency Gauge](Images/gauge.png)
-
----
