@@ -1,10 +1,10 @@
-# An interactive dashboard to explore the [Belly Button Biodiversity](http://robdunnlab.com/projects/belly-button-biodiversity/).
+## An interactive dashboard to explore the [Belly Button Biodiversity](http://robdunnlab.com/projects/belly-button-biodiversity/).
 
 ![Bacteria by filterforge.com](Images/bacteria_by_filterforgedotcom.jpg)
 
 
 
-## First - we created a Flask API
+### First - we created a Flask API
 
 - We used Flask here to designed our API for the sample dataset and used HTML and JavaScript for our dashboard's page front-end. 
 - We used also SQLite for our database and SQLAlchemy for relational mapper routing our data to our Flask application.
@@ -107,7 +107,7 @@
 
 ---
 
-## Then we used Plotly.js for Visualization
+### Then we used Plotly.js for Visualization
 
 - We employ plotly.js to build our interactive charts for our dashboard charts and integrate it to our html page.
 
